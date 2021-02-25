@@ -15,7 +15,13 @@ namespace game_arg
         {
             InitializeComponent();
         }
-        private void Form1_Load(object sender, EventArgs e)
+
+        public void update()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Form1_Load(object sender, EventArgs e)
         {
 
             InitializeComponent();
@@ -82,7 +88,7 @@ namespace game_arg
             timer1.Start();
         }
 
-        private void update(object sender, EventArgs e)
+        public void update(object sender, EventArgs e)
         {
             if (player.ballY + player.dirY > MapController.mapHeight - 1)
             {

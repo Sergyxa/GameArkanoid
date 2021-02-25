@@ -3,15 +3,15 @@ using System.Drawing;
 
 namespace game_arg
 {
-    class MapController
+    public class MapController
     {
         public Image grafic;
         public const int mapHeight = 30;
         public const int mapWidth = 20;
         public int[,] map = new int[mapHeight, mapWidth];
+        public int currPlatform;
 
         public MapController(){
-            grafic = new Bitmap("arcanoid.png");
         }
         public void AddLine()
         {
@@ -23,10 +23,9 @@ namespace game_arg
                 }
             }
             Random random = new Random();
-
             for (int j = 0; j < mapWidth; j += 2)
             {
-                int currPlatform = random.Next(1, 5);
+                currPlatform = random.Next(1, 5);
                 map[0, j] = currPlatform;
                 map[0, j + 1] = currPlatform + currPlatform * 10;
             }

@@ -2,7 +2,7 @@
 
 namespace game_arg
 {
-    class Physics
+    public class Physics
     {
         public bool IsCollide(Player player, MapController map, int dirX, int dirY, int ballX, int ballY, Label score)
         {
@@ -69,7 +69,7 @@ namespace game_arg
                 player.dirX *= -1;
                 isColliding = true;
             }
-            score.Text = "Счёт:" + player._score;
+            
             return isColliding;
         }
     }

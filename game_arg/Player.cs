@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace game_arg
 {
-    class Player
+    public class Player
     {
         public int platformX, platformY;
         public int ballX, ballY;
