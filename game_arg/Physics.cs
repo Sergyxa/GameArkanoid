@@ -4,7 +4,7 @@ namespace game_arg
 {
     class Physics
     {
-        public bool IsCollide(Player player, MapController map, int dirX, int dirY, int ballX, int ballY)
+        public bool IsCollide(Player player, MapController map, int dirX, int dirY, int ballX, int ballY, Label score)
         {
             bool isColliding = false;
             if (player.ballX + dirX > MapController.mapWidth - 1 || ballX + dirX < 0)
@@ -28,7 +28,8 @@ namespace game_arg
                 {
                     map.map[ballY + dirY, ballX] = 0;
                     map.map[ballY + dirY, ballX + 1] = 0;
-                } 
+                }
+                player._score += 50;
                 player.dirY *= -1;
                 isColliding = true;
             }
@@ -44,9 +45,11 @@ namespace game_arg
                     map.map[ballY, ballX + dirX] = 0;
                     map.map[ballY, ballX + dirX + 1] = 0;
                 }
+                player._score += 50;
                 player.dirX *= -1;
                 isColliding = true;
             }
+            score.Text = "Счёт:" + player._score;
             return isColliding;
         }
     }

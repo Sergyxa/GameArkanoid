@@ -11,5 +11,6 @@ namespace game_arg
         public int platformX, platformY;
         public int ballX, ballY;
         public int dirX = 0, dirY = 0;
+        public int _score;
     }
 }

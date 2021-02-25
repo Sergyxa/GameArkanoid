@@ -18,6 +18,10 @@ namespace game_arg
         {
 
             InitializeComponent();
+            score = new Label();
+            score.Location = new Point((MapController.mapWidth + 1) * 20, 50);
+            score.Text = "Счёт:" + player._score;
+            this.Controls.Add(score);
             timer1.Tick += new EventHandler(update);
             this.KeyDown += new KeyEventHandler(inputCheck);
             Initialization();
@@ -63,11 +67,11 @@ namespace game_arg
             }
 
             map.map[player.ballY, player.ballX] = 0;
-            if (!physics.IsCollide(player, map, player.dirX, player.dirY, player.ballX, player.ballY))
+            if (!physics.IsCollide(player, map, player.dirX, player.dirY, player.ballX, player.ballY, score))
             {
                 player.ballX += player.dirX;
             }
-            if (!physics.IsCollide(player, map, player.dirX, player.dirY, player.ballX, player.ballY))
+            if (!physics.IsCollide(player, map, player.dirX, player.dirY, player.ballX, player.ballY, score))
             {
                 player.ballY += player.dirY;
             }
@@ -89,6 +93,8 @@ namespace game_arg
             this.Width = (MapController.mapWidth + 6) * 20;
             this.Height = (MapController.mapHeight + 2) * 20;
             timer1.Interval = 50;
+            player._score = 0;
+            score.Text = "Счёт:" + player._score;
             for (int i = 0; i < MapController.mapHeight; i++)
             {
                 for (int j = 0; j < MapController.mapWidth; j++)
