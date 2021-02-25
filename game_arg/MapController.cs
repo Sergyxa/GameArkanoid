@@ -13,6 +13,24 @@ namespace game_arg
         public MapController(){
             grafic = new Bitmap("arcanoid.png");
         }
+        public void AddLine()
+        {
+            for (int i = mapHeight - 2; i > 0; i--)
+            {
+                for (int j = 0; j < mapWidth; j += 2)
+                {
+                    map[i, j] = map[i - 1, j];
+                }
+            }
+            Random random = new Random();
+
+            for (int j = 0; j < mapWidth; j += 2)
+            {
+                int currPlatform = random.Next(1, 5);
+                map[0, j] = currPlatform;
+                map[0, j + 1] = currPlatform + currPlatform * 10;
+            }
+        }
         public void DrawArea(Graphics g)
         {
             g.DrawRectangle(Pens.Black, new Rectangle(0, 0, mapWidth * 20, mapHeight * 20));
