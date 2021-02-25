@@ -41,7 +41,20 @@ namespace game_arg
             map.map[player.platformY, player.platformX + 1] = 99;
 
         }
-       
+        public void GeneratePlatforms()
+        {
+            Random random = new Random();
+            for (int i = 0; i < MapController.mapHeight / 3; i++)
+            {
+                for (int j = 0; j < MapController.mapWidth; j += 2)
+                {
+                    int currPlatform = random.Next(1, 5);
+                    map.map[i, j] = currPlatform;
+                    map.map[i, j + 1] = currPlatform + currPlatform * 10;
+                }
+            }
+        }
+
         private void update(object sender, EventArgs e)
         {
             if (player.ballY + player.dirY > MapController.mapHeight - 1)
@@ -96,8 +109,8 @@ namespace game_arg
 
             player.dirX = 1;
             player.dirY = -1;
-
+            GeneratePlatforms();
             timer1.Start();
-        }    
+        }
     }
 }

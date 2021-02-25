@@ -33,6 +33,32 @@ namespace game_arg
 
                         g.DrawImage(grafic, new Rectangle(new Point(j * 20, i * 20), new Size(20, 20)), 806, 548, 73, 73, GraphicsUnit.Pixel);
                     }
+                    if (map[i, j] == 1)
+                    {
+
+                        g.DrawImage(grafic, new Rectangle(new Point(j * 20, i * 20), new Size(40, 20)), 20, 16 + 77 * (map[i, j] - 1), 170, 59, GraphicsUnit.Pixel);
+                    }
+                    if (map[i, j] == 2)
+                    {
+
+                        g.DrawImage(grafic, new Rectangle(new Point(j * 20, i * 20), new Size(40, 20)), 20, 16 + 77 * (map[i, j] - 1), 170, 59, GraphicsUnit.Pixel);
+                    }
+                    if (map[i, j] == 3)
+                    {
+
+                        g.DrawImage(grafic, new Rectangle(new Point(j * 20, i * 20), new Size(40, 20)), 20, 16 + 77 * (map[i, j] - 1), 170, 59, GraphicsUnit.Pixel);
+                    }
+                    if (map[i, j] == 4)
+                    {
+
+                        g.DrawImage(grafic, new Rectangle(new Point(j * 20, i * 20), new Size(40, 20)), 20, 16 + 77 * (map[i, j] - 1), 170, 59, GraphicsUnit.Pixel);
+                    }
+                    if (map[i, j] == 5)
+                    {
+
+                        g.DrawImage(grafic, new Rectangle(new Point(j * 20, i * 20), new Size(40, 20)), 20, 16 + 77 * (map[i, j] - 1), 170, 59, GraphicsUnit.Pixel);
+                    }
+
                 }
             }
         }
