@@ -16,3 +16,12 @@ C:\Users\Сергей\Desktop\game_arg\game_arg\obj\Debug\game_arg.Properties.Re
 C:\Users\Сергей\Desktop\game_arg\game_arg\obj\Debug\game_arg.csproj.GenerateResource.Cache
 C:\Users\Сергей\Desktop\game_arg\game_arg\obj\Debug\game_arg.exe
 C:\Users\Сергей\Desktop\game_arg\game_arg\obj\Debug\game_arg.pdb
+C:\Users\Сергей\Desktop\game_arg\Arkanoid\game_arg\bin\Debug\game_arg.exe.config
+C:\Users\Сергей\Desktop\game_arg\Arkanoid\game_arg\bin\Debug\game_arg.exe
+C:\Users\Сергей\Desktop\game_arg\Arkanoid\game_arg\bin\Debug\game_arg.pdb
+C:\Users\Сергей\Desktop\game_arg\Arkanoid\game_arg\obj\Debug\game_arg.csprojResolveAssemblyReference.cache
+C:\Users\Сергей\Desktop\game_arg\Arkanoid\game_arg\obj\Debug\game_arg.Form1.resources
+C:\Users\Сергей\Desktop\game_arg\Arkanoid\game_arg\obj\Debug\game_arg.Properties.Resources.resources
+C:\Users\Сергей\Desktop\game_arg\Arkanoid\game_arg\obj\Debug\game_arg.csproj.GenerateResource.Cache
+C:\Users\Сергей\Desktop\game_arg\Arkanoid\game_arg\obj\Debug\game_arg.exe
+C:\Users\Сергей\Desktop\game_arg\Arkanoid\game_arg\obj\Debug\game_arg.pdb
